@@ -1,13 +1,23 @@
 import "./App.css";
+import Companies from "./components/companies/companies";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
+import Residencies from "./components/residencies/Residencies";
+import Value from "./components/value/Value";
 
 function App() {
   return (
     <>
       <div className="App">
-        <Header />
-        <Hero/>
+        <div>
+          <div className="white-gradient"/>
+              
+          <Header />
+          <Hero />
+        </div>
+        <Companies/>
+        <Residencies/>
+        <Value/>
       </div>
     </>
   );
