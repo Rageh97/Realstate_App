@@ -6,9 +6,9 @@ import data from "./../../Utils/slider.json";
 import { sliderSettings } from "../../Utils/common";
 const Residencies = () => {
   return (
-    <section className="r-wrapper">
+    <section className="r-wrapper container">
       <div className="paddings innerWidth r-container">
-        <div className="r-head flexCenter">
+        <div className="r-head flexColStart">
           <span className="orangeText">Best Choises</span>
           <span className="primaryText">Popular Residencies</span>
         </div>
@@ -16,7 +16,7 @@ const Residencies = () => {
           <SliderButtons />
           {data.map((card, idx) => (
             <SwiperSlide key={idx}>
-              <div className="r-card">
+              <div className="r-card flexColStart">
                 <img src={card.image} alt="home" />
                 <span className="secondaryText r-price">
                   <span style={{ color: "orange" }}>$</span>
@@ -38,8 +38,8 @@ const SliderButtons = () => {
   const swiper = useSwiper();
   return (
     <div className="flexCenter r-buttons">
-      <button onClick={() => swiper.slidePrev}>&lt;</button>
-      <button onClick={() => swiper.slideNext}>&gt;</button>
+      <button onClick={() => swiper.slidePrev()}>&lt;</button>
+      <button onClick={() => swiper.slideNext()}>&gt;</button>
     </div>
   );
 };

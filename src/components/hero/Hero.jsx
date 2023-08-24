@@ -4,11 +4,11 @@ import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 const Hero = () => {
   return (
-    <section className="hero-wrapper">
-      <div className="paddings innerWidth flexCenter hero-container">
+    <section className="hero-wrapper container">
+      <div className="paddings innerWidth flexCenter hero-container ">
         {/* left side*/}
         <div className="flexColStart hero-left">
-          <div className="orange-circle" />
+         
           <div className="hero-title">
             <h1>
               Discover <br /> Most Suitable <br /> Property

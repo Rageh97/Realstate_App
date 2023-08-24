@@ -2,7 +2,7 @@ import React from "react";
 import "./companies.css";
 const Companies = () => {
   return (
-    <section className="c-wrapper">
+    <section className="c-wrapper container">
       <div className="paddings innerWidth flexCenter c-container">
         <img src="./prologis.png" alt="" />
         <img src="./tower.png" alt="" />
